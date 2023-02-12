@@ -1,0 +1,98 @@
+html {
+    overflow: hidden;
+}
+
+body {
+    padding: 25px;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgray;
+    box-shadow: 0 0 10px 5px grey inset;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 2em;
+    opacity: 35%
+}
+
+.italic {
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: blue;
+    font-weight: bold;
+}
+a:hover {
+    color: blueviolet;
+}
+
+.container {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.film {
+    flex: 1 0 350px;
+    margin: 10px;
+    background: #d1c4e9;
+    border: 2pt solid gray;
+    padding: 15px;
+    border-radius: 3px;
+    max-width: 800px;
+}
+
+.film .title {
+    font-size: x-large;
+    margin-left: 1em;
+    font-weight: bold;
+    width: fit-content;
+    display: inline-block;
+    margin: 10px;
+}
+
+.year {
+    margin: 6px 0 0 0;
+    display: inline;
+}
+
+.plot {
+    font-size: large;
+    width: fit-content;
+    margin: auto 1em;
+}
+
+.cast {
+    width: fit-content;
+    margin: 1em;
+}
+.rating {
+    margin-left: 1em;
+}
+.runtime {
+    margin-left: 1em;
+}
+.remove {
+    float: right
+}
+
+.sort, .clickable {
+    cursor: pointer;
+}
+.sort:hover {
+    background-color: white;
+    box-shadow: 0 0 5px 1px white;
+}
